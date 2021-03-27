@@ -24,7 +24,9 @@ ul li{
   display: inline-block;
   list-style: none;
 }
-
+h2{
+  color: black;
+}
  .top-dot {
   font-size: 1em;
     color: #fff;
@@ -146,6 +148,13 @@ p {
   margin-right: 9%;
   letter-spacing: 2px;
 }
+/*больше область переключения*/
+.mobile-menu::before{
+ content:'';
+ position: absolute;
+ top: -10px; right: -20px;
+ bottom: -20px; left: -10px;
+}
 .mobile-menu span {
   margin: 0 auto;
   position: relative;
@@ -259,18 +268,26 @@ li{
 
    }
 
-
-
 }
-@media (max-width: 800px) {
+@media (max-width: 830px) {
     .mc {
-    margin-top: -46%;
+    margin-top: -7%;
   }
   .text-container {
-    margin-top: -36%;
+    margin-top: -5%;
+}
+.text-blueLorem{
+  padding: 2em;
 }
 }
-
+@media (max-width: 775px) {
+    .mc {
+    margin-top: -40%;
+  }
+  .text-container {
+    margin-top: -40%;
+}
+}
 @media (max-width: 700px) {
   nav {
     line-height: 3em;
